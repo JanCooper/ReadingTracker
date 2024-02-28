@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: ENC(aIlOpJWEb0EydbdwRDJOPKUBTj5DfvPnRIdDpH/QUeJciREj78zGvmJa4VyZkFLm1+U9juUUE50lWQ13C0sxnvA+dhibEGESy8qXnSyFxabRAxUZL0GrCG+z6eNpvZXH)
+    name: ENC(+ZcvXMVNMyHrL9KV9Gqs+mG+T3bGoAvvNVdIvorNyYxFLu9Bu1mqwtlyGMXfUPwNd0t76I7p/+GlBuEelIHSUg==)
+    driver: 'org.postgresql.Driver'
+    username: ENC(bp+EGunbyBRIsTh1LSWEldQiR6pUa2kEAIXVCFVeOJ9v4LjfqmihLTc/ROgxCz2h)
+    password: ENC(oo+sdz43OLZ3CnxOHK9jXXSGmN2CuzqtENbTcPzUJXfkT+zUtdWEVIH6Oxxc0V5r)
+  jpa:
+    hibernate:
+      ddl-auto: 'update' ## automatically updates the database schema based on @Entity classes.
+      dialect: 'PostgreSQL16Dialect'
+      show_sql: 'true'
+      format_sql: 'true'
+  javax:
+    persistence:
+      persistence-unit:
+        name: 'default'
+        transaction-type: 'RESOURCE_LOCAL'
+        provider: 'org.hibernate.jpa.HibernatePersistenceProvider'
+        class: ENC(mGvbdyN+YiFRejsWVLnzekfbyffkIg5PFxel1vgnbCmFNHBtPzyEvw9WksnMfGPfvUYTGPthHekSXoLy7e3lpYg0a1SMTf+fI6zoF68GY9Y=)
+  jasypt:
+    encryptor:
+      password: ${JASYPT_ENCRYPTOR_PASSWORD}
+
+
+

@@ -8,10 +8,10 @@
 		<version>3.2.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.familyreadingtrackerreboot</groupId>
+	<groupId>com.readingtracker</groupId>
 	<artifactId>ReadingTracker</artifactId>
 	<version>0.0.1</version>
-	<name>Family Reading Tracker Reboot</name>
+	<name>Reading Tracker</name>
 	<description>Recreate the original TechElevator Java Spring Boot Family Reading capstone project with updated tech stack.</description>
 	<properties>
 		<java.version>17</java.version>
@@ -42,6 +42,12 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.github.ulisesbocchio/jasypt-spring-boot-starter -->
+		<dependency>
+			<groupId>com.github.ulisesbocchio</groupId>
+			<artifactId>jasypt-spring-boot-starter</artifactId>
+			<version>3.0.5</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -50,6 +56,11 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+				<plugin>
+					<groupId>com.github.ulisesbocchio</groupId>
+					<artifactId>jasypt-maven-plugin</artifactId>
+					<version>3.0.5</version>
+				</plugin>
 		</plugins>
 	</build>
 
